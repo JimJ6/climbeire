@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E7QKCCE850"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments); x
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-E7QKCCE850');
+
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Climb Eire | About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/browser-favicon.png">
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html"><img src="images/logo.png" alt="" class="logo"></a>
+            <div class="hamburger" id="hamburger">&#9776</div>
+            <ul class="navlinks" id="navlinks">
+                <li class="navlink"><a href="index.html">Home</a></li>
+                <li class="navlink"><a href="learn.html">Learn</a></li>
+                <li class="navlink"><a href="indoorgyms.html">Indoor Gyms</a></li>
+                <li class="navlink"><a href="gallery.html">Gallery</a></li>
+                <li class="navlink current"><a href="about.html">About</a></li>
+                <li class="navlink"><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <figure id="aboutus-banner" title="male rock climber on cliff">
+
+
+    </figure>
+
+
+    <section id="about-us">
+
+        <h1>About Us</h1>
+        <p>Climb Eire is a collective of rock-climbing enthusiasts. Our mission is to provide beginner rock climbers
+            with the foundational knowledge it takes to build confidence and get started in rock-climbing. Our learn
+            section is designed to consolidate all the requisite information to help newcomers gain a solid
+            understanding by introducing the different types of rock-climbing as well as all the basic climbing terms.
+            We also provide information and links to several climbing centres throughout Ireland so that beginners can
+            take their acquired knowledge and put it into practice in the real world.
+            We hope you will enjoy using our site and will find it useful. If you have any further questions you need
+            answers to, please do not hesitate to get in touch below. If you are a climbing business and would like your
+            information shared on our site, we would love to hear from you too. And please check out our resources page
+            which is packed with tons of useful links to other websites, YouTube channels and more!</p>
+        <a id="link-button" href="resources.html">
+            <div class="link-button">Resources</div>
+        </a>
+        <h2>We'd love to hear from you!!</h2>
+
+
+    </section>
+
+    <!------------  Contact Form ------------>
+
+
+    <div class="prof-edit-form-container">
+        <p></p>
+
+        <form method="post" action="{{ url_for('about') }}" class="contact-form">
+            <p>* These fields are required!</p>
+            <div class="row">
+                <div class="cf-row">
+                    <label for="name">Name*</label>
+                </div>
+                <div class="cf-row">
+                    <input type="text" name="name" id="name" placeholder="Your name..." required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cf-row">
+                    <label for="email">Email*</label>
+                </div>
+                <div class="cf-row">
+                    <input type="email" name="email" id="email" placeholder="Your email..." required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cf-row">
+                    <label for="find-us">How did you find us?</label>
+                </div>
+                <div class="cf-row">
+                    <select name="find-us" id="find-us">
+                        <option value="na" selected>N/A</option>
+                        <option value="friend">A friend</option>
+                        <option value="social media">Social media</option>
+                        <option value="search engine">Search engine</option>
+                        <option value="advert">Advert</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="cf-row">
+                    <div class="cf-row">
+                        <label>Drop us a line!*</label>
+                    </div>
+                    <div class="cf-row">
+                        <textarea name="message" id="message" placeholder="Your message"></textarea>
+                    </div>
+                    <div class="cf-row">
+                        <label>Would you like to join our mailing list?</label>
+                    </div>
+                    <div class="cf-row">
+                        <input type="checkbox" name="newsletter" id="newsletter" checked> Yes, sign me up!!
+                    </div>
+                    <div class="btn-send">
+                            <!-- <label>&nbsp;</label> -->
+                        <input type="submit" value="Send!">
+
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+
+    </div>
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <a href="index.html"><img src="images/logo.png" alt="" class="footerlogo"></a>
+            <ul class="footerlinks">
+                <li class="footerlink"><a href="index.html">Home</a></li>
+                <li class="footerlink"><a href="learn.html">Learn</a></li>
+                <li class="footerlink"><a href="indoorgyms.html">Indoor Gyms</a></li>
+                <li class="footerlink"><a href="gallery.html">Gallery</a></li>
+                <li class="footerlink"><a href="#">About</a></li>
+                <li class="footerlink"><a href="resources.html">Resources</a></li>
+            </ul>
+
+            <div class="socialmedia">
+                <img class="social-media-links" src="images/social_media_icons/facebook.svg" alt="">
+                <img class="social-media-links" src="images/social_media_icons/instagram.svg" alt="">
+                <img class="social-media-links" src="images/social_media_icons/twitter.svg" alt="">
+                <img class="social-media-links" src="images/social_media_icons/youtube.svg" alt="">
+            </div>
+
+        </div>
+
+        <div class="attributions">
+            <div class="freepik">Icons made by <a href="https://www.flaticon.com/authors/freepik"
+                    title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
+                    title="Flaticon">www.flaticon.com</a></div>
+            <p>Images by <a href="https://www.canva.com">Canva.com</a></p>
+        </div>
+
+
+    </footer>
+
+    <script src="javascript/main.js"></script>
+</body>
+
+</html>
